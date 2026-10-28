@@ -1,0 +1,844 @@
+    /*---------------default_setting----------------*/
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    :root {
+      --font-family01: "Cormorant Garamond", serif;
+      --font-family03: "Inter", sans-serif;
+      --font-color: #362706;
+      --main-color: #5A713E;
+      --sub-color: #C8D4B6;
+      --background-color: #FFFDF7;
+    }
+
+    /*----------------------------------------------*/
+    body {
+      background-color: var(--background-color);
+      cursor: pointer;
+    }
+
+    .gnb {
+      display: none;
+      width: 700px;
+      height: 30px;
+      position: fixed;
+      top: 30px;
+      right: calc(640px - 30px - 270px);
+      z-index: 99999;
+    }
+
+    .gnb ul {
+      width: 670px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .gnb ul li {
+      float: left;
+      padding: 0 15px;
+    }
+
+    .gnb ul li a {
+      font-family: var(--font-family03);
+      display: block;
+      line-height: 30px;
+      text-align: center;
+      font-size: 24px;
+      color: var(--font-color);
+    }
+
+    .gnb ul li a.on {
+      color: var(--main-color);
+      font-weight: bolder;
+      font-size: 26px;
+      border-bottom: 1px solid var(--main-color);
+    }
+
+    .pages div {
+      width: 100%;
+      height: 100vh;
+      box-sizing: border-box;
+      font-size: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .wrap {
+      width: 100%;
+    }
+
+    .wrap section {
+      width: 1280px;
+      height: 100vh;
+      margin: 0 auto;
+      background-color: var(--background-color);
+    }
+
+    .wrap .intro_box {
+      position: relative;
+    }
+
+    .intro_box .intro_title {
+      padding-top: 80px;
+      margin-left: 100px;
+    }
+
+    .intro_title .intro_txt01 {
+      font-size: 38px;
+      color: var(--font-color);
+    }
+
+    .intro_title .intro_txt02 {
+      font-size: 40px;
+      margin-top: 30px;
+      color: var(--font-color);
+    }
+
+    .intro_title .intro_text {
+      font-size: 44px;
+      display: flex;
+      color: var(--main-color);
+    }
+
+    .intro_title .intro_text .name {
+      font-weight: bolder;
+      margin: 0 5px;
+      font-size: 46px;
+    }
+
+    .intro_box .intro .intro_img {
+      height: 600px;
+      display: flex;
+      position: relative;
+      bottom: 0px;
+      right: 0;
+    }
+
+    .intro .intro_img .first_tree {
+      position: absolute;
+      bottom: 0px;
+      right: -160px;
+      width: 700px;
+      height: 700px;
+    }
+
+    .intro .intro_img .second_tree {
+      position: absolute;
+      bottom: -1%;
+      right: 300px;
+      width: 500px;
+      height: 500px;
+      opacity: 80%;
+    }
+
+    .intro .intro_img .third_tree {
+      position: absolute;
+      bottom: -3.5%;
+      right: 600px;
+      width: 400px;
+      height: 400px;
+      opacity: 65%;
+    }
+
+    .intro .intro_img .four_tree {
+      position: absolute;
+      bottom: -3%;
+      right: 830px;
+      width: 300px;
+      height: 300px;
+      opacity: 45%;
+    }
+
+    .intro .intro_img .fix_tree {
+      position: absolute;
+      bottom: -12%;
+      right: 980px;
+      width: 300px;
+      height: 300px;
+      opacity: 40%;
+    }
+
+    /**/
+    .about_box {}
+
+    .about_box .about {
+      padding: 90px 160px;
+      overflow: hidden;
+    }
+
+    .about .about_title {
+      font-size: 40px;
+      font-family: var(--font-family01);
+    }
+
+    .about_title .myname {
+      font-size: 36px;
+      margin-left: 100px;
+    }
+
+    .about_box .profile {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 60px;
+    }
+
+    .about_box .profile .myimage {
+      position: relative;
+    }
+
+    .profile .myimage .mybackground {
+      width: 300px;
+      height: 390px;
+      background-color: var(--main-color);
+      border-radius: 140px;
+      position: relative;
+    }
+
+    .profile .myimage .mybackground01 {
+      width: 280px;
+      height: 370px;
+      background-color: var(--sub-color);
+      border-radius: 140px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    .profile .myimage .my_img {
+      width: 270px;
+      height: 360px;
+      border-radius: 140px;
+      overflow: hidden;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+    }
+
+    .profile .myimage .my_img img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .about_box .profile .about_profile {
+      width: 600px;
+      height: 420px;
+      background-color: var(--main-color);
+      border-radius: 20px;
+      position: relative;
+    }
+
+    .profile .about_profile .about_page {
+      width: 120px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .about_profile .about_page .about_btn {
+      width: 25px;
+      height: 25px;
+      border: none;
+      background-color: var(--main-color);
+    }
+
+    .about_profile .about_page .about_page_num {
+      display: inline-block;
+      width: 30px;
+      height: 25px;
+      line-height: 25px;
+      text-align: center;
+      font-size: 20px;
+      color: var(--background-color);
+    }
+
+    .profile .about_profile .profile_box {
+      padding: 70px 90px;
+      display: block;
+    }
+
+    .profile .profile_box .profile_title {
+      font-family: var(--font-family02);
+      font-size: 40px;
+      color: var(--background-color);
+    }
+
+    .profile .profile_box .profile_text {
+      margin: 10px 0;
+      font-family: var(--font-family03);
+      font-size: 20px;
+      color: var(--background-color);
+      display: flex;
+    }
+
+    .profile_text .profile_txt01 {
+      width: 35%;
+    }
+
+    .profile_text .profile_txt01 li {
+      margin: 0;
+      padding: 5px;
+      list-style-image: url(./img/leaf.png);
+      list-style-position: inside;
+    }
+
+    .profile_text .profile_txt02 {
+      width: 65%;
+    }
+
+    .profile_text .profile_txt02 p {
+      padding: 5px 0;
+    }
+
+    .about_profile .experience_box {
+      padding: 40px 70px;
+      display: none;
+    }
+
+    .experience_box .experience_title {
+      font-size: 40px;
+      color: var(--background-color);
+      font-family: var(--font-family02);
+    }
+
+    .experience_box .experience_text {
+      font-family: var(--font-family03);
+      font-size: 20px;
+      margin-top: 10px;
+      display: flex;
+      color: var(--background-color);
+    }
+
+    .experience_text .experience_txt01 {
+      width: 28%;
+    }
+
+    .experience_text .experience_txt01 li {
+      padding: 5px 0;
+      list-style-image: url(./img/leaf.png);
+      list-style-position: inside;
+    }
+
+    .experience_text .experience_txt01 li:nth-child(1) {
+      padding-bottom: 32px;
+    }
+
+    .experience_text .experience_txt01 li:nth-child(2) {
+      padding-bottom: 50px;
+    }
+
+    .experience_text .experience_txt02 {
+      width: 28%;
+      font-size: 14px;
+    }
+
+    .experience_text .experience_txt02 p {
+      padding: 9px 0;
+    }
+
+    .experience_text .experience_txt02 p:nth-child(1) {
+      padding-bottom: 40px;
+    }
+
+    .experience_text .experience_txt03 {
+      width: 44%;
+    }
+
+    .experience_text .experience_txt03 p {
+      padding: 5px 0;
+    }
+
+    .experience_text .experience_txt03 .classname {
+      font-size: 12px;
+      line-height: 12px
+    }
+
+    /**/
+    .skills_box {}
+
+    .skills_box .skills {
+      padding: 100px 30PX;
+    }
+
+    .skills .skills_title {
+      font-size: 40px;
+      font-family: var(--font-family01);
+    }
+
+    .skills .skill {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 60px;
+    }
+
+    .skill .skill_tab {
+      margin-top: 40px;
+    }
+
+    .skill_tab li {
+      width: 280px;
+      height: 60px;
+      font-family: var(--font-family01);
+      color: var(--font-color);
+      font-size: 30px;
+      display: flex;
+      justify-content: left;
+      border: 1px solid var(--font-color);
+      border-radius: 20px;
+      padding: 10px;
+      margin: 30px 0;
+      text-align: center;
+      line-height: 60px;
+    }
+
+    .skill_tab li>div {
+      width: 40px;
+      height: 40px;
+      margin-top: 8px;
+    }
+
+    .skill_tab li p {
+      margin-left: 10px;
+    }
+
+    .skill_tab .on_tab {
+      font-weight: bold;
+      color: var(--main-color);
+      border-color: var(--main-color);
+    }
+
+    .skill .skill_sheet {
+      width: 880px;
+      height: 520px;
+      border-radius: 20px;
+      border: 1px solid var(--font-color);
+    }
+
+    .skill .skill_sheet>div {
+      display: none;
+    }
+
+    .skill .skill_sheet .on_sheet {
+      display: block;
+    }
+
+    .skill .skill_sheet>div .skills01_title {
+      margin: 20px;
+      font-size: 30px;
+      font-family: var(--font-family01);
+      font-weight: bold;
+    }
+
+    .skill .skill_sheet>div .skills01 {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 40px;
+    }
+
+    .skill .skill_sheet>div .skills01 .skills01_tab {
+      width: 340px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .skill .skill_sheet>div .skills01 .skills01_tab li {
+      width: 90px;
+      height: 90px;
+      padding: 5px;
+      border-radius: 20px;
+      background-color: #eee;
+    }
+
+    .skill .skill_sheet>div .skills01 .skills01_sheet {
+      width: 430px;
+      height: 380px;
+      border: 1px solid var(--main-color);
+      border-radius: 20px;
+      background-color: var(--main-color);
+    }
+
+    .skill .skill_sheet>div .skills01 .skills01_sheet>div {
+      display: none;
+    }
+
+    .skill .skill_sheet>div .skills01 .skills01_sheet .on_sheet01 {
+      display: block;
+    }
+
+    .skills01 .skills01_sheet .skills01_detail .inskill_title {
+      font-size: 24px;
+      margin: 5px 20px;
+      margin-top: 20px;
+      font-family: var(--font-family02);
+      color: var(--background-color);
+    }
+
+    .skills01 .skills01_sheet .skills01_detail .inskill_detail {
+      padding: 20px 30px;
+      font-size: 16px;
+      color: var(--background-color);
+    }
+
+    .skills01 .skills01_sheet .skills01_detail .inskill_detail .inskill_txt {
+      margin-top: 5px;
+      color: var(--background-color);
+    }
+
+    .skills01 .skills01_sheet .skills01_detail .inskill_detail .inskill_txt p {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+
+    .skills01 .skills01_sheet .skills01_detail .inskill_detail .inskill_txt ul {
+      padding: 8px 5px;
+    }
+
+    .skills01 .skills01_sheet .skills01_detail .inskill_detail .inskill_txt ul li {
+      list-style-image: url(./img/leaf.png);
+      list-style-position: inside;
+      padding: 3px 0;
+    }
+
+    /**/
+    .capistone_box {}
+
+    .capistone_box .capistone {
+      padding: 90px 100px;
+    }
+
+    .capistone_box .capistone .capistone_title {
+      font-size: 40px;
+      font-family: var(--font-family01);
+      margin-bottom: 60px;
+    }
+
+    .capistone_box .capistone .capistone_cover {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .capistone_box .capistone .capistone_cover .capistone_imgbox {
+      background-color: var(--main-color);
+      border-radius: 20px;
+      width: 600px;
+      height: 450px;
+      overflow: hidden;
+    }
+
+    .capistone_cover .capistone_imgbox .capistone_img {
+      width: 550px;
+      height: auto;
+      background-color: #FFFDF7;
+      border-radius: 20px;
+      margin-left: 25px;
+      margin-top: 15px;
+      overflow: hidden;
+    }
+
+    .capistone_cover .capistone_imgbox .capistone_img img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .capistone_cover .capistone_text {
+      width: 450px;
+      font-family: var(--font-family03);
+    }
+
+    .capistone_cover .capistone_text .capistone_txt01 {
+      padding: 40px 10px;
+      font-size: 30px;
+      color: #362706;
+    }
+
+    .capistone_cover .capistone_text .capistone_txt02 {
+      padding: 10px 20px;
+      font-size: 20px;
+    }
+
+    .capistone_cover .capistone_text .capistone_txt03 {
+      padding: 10px 20px;
+    }
+
+    .capistone_cover .capistone_text .capistone_textbtn {
+      padding: 50px 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .capistone_cover .capistone_text .capistone_textbtn a {
+      width: 45%;
+      padding: 10px 5px;
+      text-align: center;
+      border-radius: 20px;
+      border: 1px solid var(--font-color);
+      background-color: var(--background-color);
+    }
+
+    .capistone_cover .capistone_text .capistone_textbtn a:hover {
+      background-color: var(--main-color);
+      color: #FFFDF7;
+      border: 1px solid var(--main-color);
+    }
+
+    /**/
+    .project_box {}
+
+    .project_box .project {
+      padding: 90px 100px;
+    }
+
+    .project_box .project .project_title {
+      font-size: 40px;
+      font-family: var(--font-family01);
+      margin-bottom: 30px;
+    }
+
+    .project_cover {
+      width: 1020px;
+      height: 600px;
+      padding: 20px;
+      border-radius: 20px;
+      background-color: var(--main-color);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .project_cover .project_btn {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 99999;
+      border: none;
+      background-color: var(--background-color);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .project_cover .project_btn img {
+      width: 24px;
+      height: 24px;
+      display: block;
+      margin: 8px;
+    }
+
+    .project_left {
+      left: 15px;
+    }
+
+    .project_right {
+      right: 15px;
+    }
+
+    .project_contents {
+      width: 890px;
+      height: 580px;
+      margin: 0 65px;
+      overflow: hidden;
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+
+    .project_contents::-webkit-scrollbar {
+      width: 1000px;
+      height: 8px;
+    }
+
+    .project_contents::-webkit-scrollbar-track {
+      background-color: var(--main-color);
+    }
+
+    .project_contents::-webkit-scrollbar-thumb {
+      background-color: var(--background-color);
+    }
+
+    .project_contents::-webkit-scrollbar-track,
+    .project_contents::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+    }
+
+    .project_contents::-webkit-scrollbar-button {
+      display: none;
+    }
+
+    .project_cover .project_inside {
+      width: max-content;
+      height: 560px;
+      margin: 10px;
+      display: flex;
+    }
+
+    .project_cover .project_inside .project01 {
+      width: 400px;
+      height: 520px;
+      border-radius: 20px;
+      flex-shrink: 0;
+      background-color: var(--background-color);
+      overflow: hidden;
+      margin: 20px;
+    }
+
+    .project_cover .project_inside .project01 .project01_img {
+      margin: 10px;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .project_cover .project_inside .project01 .project01_text {
+      font-family: var(--font-family02);
+    }
+
+    .project01 .project01_text .project01_txt01 {
+      padding: 5px 20px;
+      font-size: 30px;
+    }
+
+    .project01 .project01_text .project01_txt01 .text01 {
+      font-size: 14px;
+      color: #222;
+    }
+
+    .project01 .project01_text .project01_txt02 {
+      padding: 0 20px;
+    }
+
+    .project01 .project01_text .project01_txt02 span {
+      margin: 0 5px;
+      font-size: 16px;
+    }
+
+    .project01 .project01_text .project01_txt03 {
+      padding: 5px 20px;
+      display: flex;
+    }
+
+    .project01 .project01_text .project01_txt03 p {
+      margin: 0 5px;
+      font-size: 16px;
+    }
+
+    .project01 .project01_btn {
+      padding: 5px 40px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .project01 .project01_btn01 {
+      padding: 0px 40px;
+      display: flex;
+      justify-content: space-between;
+      background-color: antiquewhite;
+    }
+
+    .project01 .project01_btn a {
+      width: 100px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 10px;
+      border: 1px solid var(--font-color);
+      background-color: var(--background-color);
+    }
+
+    .project01 .project01_btn a:hover {
+      border-color: 1px solid var(--main-color);
+      background-color: var(--main-color);
+      color: var(--background-color);
+    }
+
+    /**/
+
+    .contact_box {}
+
+    .contact_box .contact {
+      padding: 90px 100px;
+    }
+
+    .contact_box .contact .contact_title {
+      font-size: 40px;
+      font-family: var(--font-family01);
+      margin: 20px auto;
+    }
+
+    .contact_box .contact .contact01 {
+      display: flex;
+      position: relative;
+    }
+
+    .contact_box .contact .contact01 .contact_txt {
+      width: 200px;
+      font-size: 40px;
+      color: var(--font-color);
+      font-family: var(--font-family03);
+      z-index: 999;
+    }
+
+    .contact_box .contact .contact01 .contact_img {
+      position: relative;
+    }
+
+    .contact_box .contact .contact01 .contact_img .contact_background {
+      width: 300px;
+      height: 390px;
+      border-radius: 150px;
+      background-color: var(--main-color);
+      margin-top: 50px;
+    }
+
+    .contact_box .contact .contact01 .contact_img .contact_background01 {
+      width: 280px;
+      height: 370px;
+      border-radius: 140px;
+      background-color: var(--sub-color);
+      position: absolute;
+      top: 60px;
+      left: 10px;
+    }
+
+
+    .contact_box .contact .contact01 .contact_img .contact_image {
+      width: 270px;
+      height: 360px;
+      border-radius: 135px;
+      overflow: hidden;
+      position: absolute;
+      top: 65px;
+      left: 15px;
+    }
+
+    .contact_box .contact .contact01 .contact_img .contact_image img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .contact_box .contact .contact01 .contact_text {
+      font-size: 30px;
+      color: var(--font-color);
+      margin-top: 50px;
+      margin-left: 100px;
+      font-family: var(--font-family02);
+    }
+
+    .contact_box .contact .contact01 .contact_text p {
+      padding: 10px 0;
+    }
+
+    .contact_box .contact .contact01 .contact_text a {
+      color: var(--font-color);
+    }

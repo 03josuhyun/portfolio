@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PORTFOLIO</title>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- jQuery Plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.2.2/jquery.mousewheel.min.js"></script>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+
+  <!-- JS -->
+  <script src="./index.js"></script>
+  <script src="./index_gsap.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+  <nav class="gnb">
+    <ul>
+      <li><a href="#intro_box">Home</a></li>
+      <li><a href="#about_box">About</a></li>
+      <li><a href="#skills_box">Skills</a></li>
+      <li><a href="#capistone_box">Capistone</a></li>
+      <li><a href="#project_box">Project</a></li>
+      <li><a href="#contact_box">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="wrap">
+    <section class="intro_box" id="intro_box">
+      <div class="intro">
+        <div class="intro_title">
+          <p class="intro_txt01">안녕하세요!</p>
+          <p class="intro_txt02">모든 경험을 발판 삼아 성장하는</p>
+          <div class="intro_text">
+            <p>신입 프론트엔드 개발자</p>
+            <p class="name">조수현</p>
+            <p>입니다</p>
+          </div>
+        </div><!--intro_title-->
+        <div class="intro_img">
+          <div class="first_tree">
+            <img src="./img/tree_img01.svg" alt="">
+          </div>
+          <div class="second_tree">
+            <img src="./img/tree_img02.svg" alt="">
+          </div>
+          <div class="third_tree">
+            <img src="./img/tree_img03.svg" alt="">
+          </div>
+          <div class="four_tree">
+            <img src="./img/tree_img04.svg" alt="">
+          </div>
+          <div class="fix_tree">
+            <img src="./img/tree_img05.svg" alt="">
+          </div>
+        </div>
+      </div><!--intro-->
+    </section><!--first-->
+    <section class="about_box" id="about_box">
+      <div class="about">
+        <div class="my_box">
+          <div class="about_title">
+            <p>ABOUT</p>
+            <p class="myname">JoSuHyun</p>
+          </div><!--about_title-->
+        </div>
+        <div class="profile">
+          <div class="myimage">
+            <div class="mybackground"></div>
+            <div class="mybackground01"></div>
+            <div class="my_img">
+              <img src="./img/about_img04.jpg" alt="">
+            </div>
+          </div><!--myimage-->
+          <div class="about_profile">
+            <div class="about_page">
+              <button class="about_before about_btn">
+                <img src="./img/left.png" alt="">
+              </button>
+              <span class="about_page_num">1/2</span>
+              <button class="about_next about_btn">
+                <img src="./img/right.png" alt="">
+              </button>
+            </div>
+            <div class="profile_box">
+              <div class="profile_title">
+                <p>Profile</p>
+              </div>
+              <div class="profile_text">
+                <ul class="profile_txt01">
+                  <li>이름</li>
+                  <li>생년월일</li>
+                  <li>전화번호</li>
+                  <li>이메일</li>
+                  <li>학력</li>
+                </ul>
+                <div class="profile_txt02">
+                  <p>조수현</p>
+                  <p>2003.11.30</p>
+                  <p>010-2754-1583</p>
+                  <p>112hee22@naver.com</p>
+                  <p>
+                    혜화여자고등학교 졸업 <br>
+                    경성대학교 정보통신공학과 졸업
+                  </p>
+                </div>
+              </div>
+            </div><!--profile_box-->
+            <div class="experience_box">
+              <div class="experience_title">
+                <p>Experience</p>
+              </div>
+              <div class="experience_text">
+                <ul class="experience_txt01">
+                  <li>동아리</li>
+                  <li>아르바이트</li>
+                  <li>교육이수</li>
+                </ul>
+                <div class="experience_txt02">
+                  <p>2022 ~ 2024</p>
+                  <p>2022.05 ~ 2022.09</p>
+                  <p>2023.04 ~ 2023.07</p>
+                  <p>2024.08 ~ 2025.11</p>
+                  <p>2026.04 ~ 2026.09</p>
+                </div>
+                <div class="experience_txt03">
+                  <p>학과 지도교수 연계코딩<br> 스터디 동아리</p>
+                  <p>배스킨라빈스 31</p>
+                  <p>차돌풍</p>
+                  <p>카페베이</p>
+                  <p>
+                    그린 컴퓨터아카데미 <br>
+                  <p class="classname">『스마트웹&콘텐츠개발』AI활용 UI/UX & 프론트엔드 (JavaScript,Figma AI,React,SQL) 개발자 양성과정</p>
+                  </p>
+                </div>
+              </div>
+            </div><!--experience_box-->
+          </div><!--about_profile-->
+        </div>
+      </div><!--about-->
+    </section><!--second-->
+    <section class="skills_box" id="skills_box">
+      <div class="skills">
+        <div class="skills_title">
+          <p>Skills</p>
+        </div>
+        <div class="skill">
+          <ul class="skill_tab">
+            <li class="on_tab">
+              <div>
+                <img src="./img/skills_tabimg01.png" alt="">
+              </div>
+              <p>Front End</p>
+            </li>
+            <li>
+              <div>
+                <img src="./img/skills_tabimg02.png" alt="">
+              </div>
+              <p>Program</p>
+            </li>
+            <li>
+              <div>
+                <img src="./img/skills_tabimg03.png" alt="">
+              </div>
+              <p>Tools</p>
+            </li>
+            <li>
+              <div>
+                <img src="./img/skills_tabimg04.png" alt="">
+              </div>
+              <p>Etc</p>
+            </li>
+          </ul><!--skill_tab-->
+          <div class="skill_sheet">
+            <div class="on_sheet">
+              <div class="skills01_title">
+                <p>Front End</p>
+              </div>
+              <div class="skills01">
+                <ul class="skills01_tab">
+                  <li class="on_tab01"><img src="./img/logo09.png" alt=""></li>
+                  <li><img src="./img/logo10.png" alt=""></li>
+                  <li><img src="./img/logo11.png" alt=""></li>
+                  <li><img src="./img/logo12.png" alt=""></li>
+                  <li><img src="./img/logo13.png" alt=""></li>
+                  <li><img src="./img/logo14.png" alt=""></li>
+                  <li><img src="./img/logo15.png" alt=""></li>
+                  <li><img src="./img/logo21.png" alt=""></li>
+                </ul>
+                <div class="skills01_sheet">
+                  <div class="on_sheet01 skills01_detail">
+                    <div class="inskill_title">
+                      <p>HTML</p>
+                    </div>
+                    <div class="inskill_detail">
+                      <p>
+                        유효성 문제없이 모든 사람들이 편하게 이용할 수 있는 HTML 구조를 간단하고 빠르게 구성합니다
+                      </p>
+                      <div class="inskill_txt">
+                        <p>가능한 것</p>
+                        <ul>
+                          <li>시멘틱 태그를 활용한 구조 설계</li>
+                          <li>접근성을 고려한 마크업</li>
+                          <li>반응형 웹 페이지 구현</li>
+                          <li>다양한 브라우저 호환성 고려</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div><!--html-->
+                  <div class="skills01_detail">
+                    <div class="inskill_title">
+                      <p>CSS</p>
+                    </div>
+                    <div class="inskill_detail">
+                      <p>웹 페이지의 스타일과 레이아웃을 정의하고, 다양한 디바이스 환경에서도 일관되고 깔끔한 UI를 구현합니다.</p>
+                      <div class="inskill_txt">
+                        <p>가능한 것</p>
+                        <ul>
+                          <li>Flexbox 및 Grid를 활용한 레이아웃 설계</li>
+                          <li>미디어 쿼리 기반의 반응형 웹 스타일링</li>
+                          <li>CSS 애니메이션 및 트랜지션 효과 적용</li>
+                          <li>크로스 브라우징을 고려한 스타일 작성</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div><!--css_box-->
+                  <div class="skills01_detail">
+                    <div class="inskill_title">
+                      <p>Java Script</p>
+                    </div>
+                    <div class="inskill_detail">
+                      <p>ES6+ 문법을 활용하여 웹 페이지에 동적인 기능을 구현하고, 사용자 조작에 따른 데이터 및 이벤트 처리를 수행합니다.</p>
+                      <div class="inskill_txt">
+                        <p>가능한 것</p>
+                        <ul>
+                          <li>DOM 조작 및 이벤트 핸들링 구현</li>
+                          <li>Fetch를 활용한 비동기 API 통신 및 데이터 처리</li>
+                          <li>ES6+ 주요 문법(화살표 함수, Promise 등) 활용</li>
+                          <li>클라이언트 측 기본 유효성 검사 및 상태 관리</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div><!--js_box-->
+                  <div class="skills01_detail">
+                    <div class="inskill_title">
+                      <p>SCSS</p>
+                    </div>
+                    <div class="inskill_detail">
+                      <p>CSS 전처리기인 SCSS를 활용하여 코드의 재사용성과 유지보수성을 높이고, 효율적으로 스타일을 관리합니다.</p>
+                      <div class="inskill_txt">
+                        <p>가능한 것</p>
+                        <ul>
+                          <li>변수, Mixin, Extend를 활용한 코드 모듈화</li>
+                          <li>중첩(Nesting) 구문을 통한 가독성 높은 구조 설계</li>
+                          <li>공통 스타일 컴포넌트화 및 파일 분리 관리</li>
+                          <li>반복적인 CSS 작업 최적화</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div><!--scss_box-->
+                  <div class="skills01_detail">
+                    <div class="inskill_title">
+                      <p>JQuery</p>
+                    </div>
+                    <div class="inskill_detail">
+                      <p>직관적인 DOM 탐색 및 조작 라이브러리를 사용하여 빠른 UI 인터랙션과 크로스 브라우징 이벤트를 구현합니다.</p>
+                      <div class="inskill_txt">
+                        <p>가능한 것</p>
+                        <ul>
+                          <li>간결한 문법을 통한 DOM 요소 선택 및 조작</li>
+                          <li>슬라이드, 모달, 드롭다운 등 UI 애니메이션 구현</li>
+                          <li>Ajax 기반의 비동기 데이터 요청 처리</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div><!--jquery_box-->
+                  <div class="skills01_detail">
+                    <div class="inskill_title">
+                      <p>REACT</p>
+                    </div>
+                    <div class="inskill_detail">
+                      <p>컴포넌트 기반 아키텍처를 이해하고, 상태(State)와 속성(Props) 관리로 유연한 사용자 인터페이스를 구축합니다.</p>
+                      <div class="inskill_txt">
+                        <p>가능한 것</p>
+                        <ul>
+                          <li>컴포넌트 재사용성을 고려한 UI 설계</li>
+                          <li>React Hooks(useState, useEffect 등) 활용</li>
+                          <li>SPA 구조 구현 및 라우팅 처리</li>
+                          <li>Props 전달 및 기본 상태를 통한 데이터 흐름 제어</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div><!--react_box-->
+                  <div class="skills01_detail">
+                    <div class="inskill_title">
+                      <p>Figma</p>
+                    </div>
+                    <div class="inskill_detail">
+                      <p>UX/UI 디자인 프로세스를 이해하고, 와이어프레임과 프로토타입 제작을 통해 직관적이고 효율적인 (UX)을 설계합니다.</p>
+                      <div class="inskill_txt">
+                        <p>가능한 것</p>
+                        <ul>
+                          <li>페르소나 및 사용자 여정 지도 작성</li>
+                          <li>와이어프레임 및 고해상도 프로토타입 제작</li>
+                          <li>컴포넌트 및 디자인 시스템관리</li>
+                          <li>개발자와의 효율적인 UI/UX 협업 및 핸드오프</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skills01_detail">
+                    <div class="inskill_title">
+                      <p>GSAP</p>
+                    </div>
+                    <div class="inskill_detail">
+                      <p>
+                        부드럽고 자연스러운 애니메이션을 구현하여 사용자에게 시각적인 인터랙션을 제공합니다.
+                      </p>
+                      <div class="inskill_txt">
+                        <p>가능한 것</p>
+                        <ul>
+                          <li>간단한 문법을 통한 DOM 요소 애니메이션</li>
+                          <li>Timeline을 활용한 순차적인 애니메이션 구현</li>
+                          <li>ScrollTrigger를 활용한 스크롤 기반 애니메이션현</li>
+                          <li>SplitText를 활용한 텍스트 애니메이션 구현</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div><!--gsap-->
+                </div><!--front_end_sheet-->
+              </div><!--front_end-->
+            </div><!--front_end on_sheet-->
+            <div>
+              <div class="skills01_title">
+                <p>Program</p>
+              </div>
+              <div class="skills01">
+                <ul class="skills01_tab">
+                  <li class="on_tab01"><img src="./img/logo02.png" alt=""></li>
+                  <li><img src="./img/logo03.png" alt=""></li>
+                  <li><img src="./img/logo04.png" alt=""></li>
+                  <li><img src="./img/logo16.png" alt=""></li>
+                  <li><img src="./img/logo17.png" alt=""></li>
+                </ul>
+                <div class="skills01_sheet">
+                  <div class="on_sheet01 skills01_detail">
+                    <div class="inskill_title">
+                      <p>C</p>
+                    </div>
+                    <div class="inskill_detail">
+                      <p>
+                        기본 문법과 프로그래밍 구조를 이해하고 있으며, 조건문·반복문·함수·배열·포인터 등을 활용한 프로그램 구현이 가능합니다.
+                      </p>
+                      <div class="inskill_txt">
+                        <p>가능한 것</p>
+                        <ul>
+                          <li>기본 문법 및 자료형 활용</li>
+                          <li>조건문/반복문/함수 배열 및 포인터 활용</li>
+                          <li>기본적인 문제 해결 및 알고리즘 구현</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div><!--html-->
+                  <div class="skills01_detail">
+                    <div class="inskill_title">
+                      <p>C++</p>
+                    </div>
+                    <div class="inskill_detail">
+                      <p>C++의 기본 문법과 객체지향 프로그래밍 개념을 이해하고 있으며, 자료구조와 클래스 등을 활용한 프로그램 구현이 가능합니다.</p>
+                      <div class="inskill_txt">
+                        <p>가능한 것</p>
+                        <ul>
+                          <li>클래스/ 객체 활용</li>
+                          <li>함수 및 배열</li>
+                          <li>객체지향 프로그래밍 기초</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div><!--css_box-->
+                  <div class="skills01_detail">
+                    <div class="inskill_title">
+                      <p>C#</p>
+                    </div>
+                    <div class="inskill_detail">
+                      <p>기본 문법과 객체지향 프로그래밍의 구조를 이해하고 있으며, 간단한 프로그램을 구현할 수 있는 수준입니다.</p>
+                      <div class="inskill_txt">
+                        <p>가능한 것</p>
+                        <ul>
+                          <li>변수 / 조건문 / 반복문 / 메서드</li>
+                          <li>클래스/ 객체</li>
+                          <li>기본적인 객체지향 구조</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div><!--js_box-->
+                  <div class="skills01_detail">
+                    <div class="inskill_title">
+                      <p>Python</p>
+                    </div>
+                    <div class="inskill_detail">
+                      <p>Python의 기본 문법을 이해하고 있으며, 간단한 데이터 처리 및 프로그램을 구현할 수 있습니다.</p>
+                      <div class="inskill_txt">
+                        <p>가능한 것</p>
+                        <ul>
+                          <li>변수/조건문/반복문 함수</li>
+                          <li>리스트/딕셔너리</li>
+                          <li>기본적인데이터 처리</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div><!--scss_box-->
+                  <div class="skills01_detail">
+                    <div class="inskill_title">
+                      <p>Java</p>
+                    </div>
+                    <div class="inskill_detail">
+                      <p>Java의 기본 문법과 객체지향 프로그래밍을 이해하고 있으며, 클래스와 메서드를 활용한 기본적인 프로그램 구현이 가능합니다.</p>
+                      <div class="inskill_txt">
+                        <p>가능한 것</p>
+                        <ul>
+                          <li>클래스/객체</li>
+                          <li>상속/오버라이딩</li>
+                          <li>예외 처리</li>
+                          <li>기본적인 객체지향 프로그래밍</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div><!--jquery_box-->
+                  <div class="skills01_detail">
+                    <div class="inskill_title">
+                      <p>REACT</p>
+                    </div>
+                    <div class="inskill_detail">
+                      <p>컴포넌트 기반 아키텍처를 이해하고, 상태(State)와 속성(Props) 관리로 유연한 사용자 인터페이스를 구축합니다.</p>
+                      <div class="inskill_txt">
+                        <p>가능한 것</p>
+                        <ul>
+                          <li>컴포넌트 재사용성을 고려한 UI 설계</li>
+                          <li>React Hooks(useState, useEffect 등) 활용</li>
+                          <li>SPA 구조 구현 및 라우팅 처리</li>
+                          <li>Props 전달 및 기본 상태 관리를 통한 데이터 흐름 제어</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div><!--react_box-->
+                  <div class="skills01_detail">
+                    <div class="inskill_title">
+                      <p>Figma</p>
+                    </div>
+                    <div class="inskill_detail">
+                      <p>UX/UI 디자인 프로세스를 이해하고, 와이어프레임과 프로토타입 제작을 통해 직관적이고 효율적인 (UX)을 설계합니다.</p>
+                      <div class="inskill_txt">
+                        <p>가능한 것</p>
+                        <ul>
+                          <li>페르소나 및 사용자 여정 지도 작성</li>
+                          <li>와이어프레임 및 고해상도 프로토타입 제작</li>
+                          <li>컴포넌트 및 디자인 시스템 관리</li>
+                          <li>개발자와의 효율적인 UI/UX 협업 및 핸드오프</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div><!--programming_sheet-->
+              </div><!--programming-->
+            </div><!--programming-->
+            <div>
+              <div class="skills01_title">
+                <p>Tools</p>
+              </div>
+              <div class="skills01">
+                <ul class="skills01_tab">
+                  <li class="on_tab01"><img src="./img/logo18.png" alt=""></li>
+                  <li><img src="./img/logo08.png" alt=""></li>
+                  <li><img src="./img/logo07.png" alt=""></li>
+                  <li><img src="./img/logo.png" alt=""></li>
+                </ul>
+                <div class="skills01_sheet">
+                  <div class="on_sheet01 skills01_detail">
+                    <div class="inskill_title">
+                      <p>GitHub</p>
+                    </div>
+                    <div class="inskill_detail">
+                      <p>
+                        프로젝트의 소스 코드를 관리하고 작업 내용을 기록하며 협업을 위한 기본적인 Git 기능을 활용할 수 있습니다.
+                      </p>
+                      <div class="inskill_txt">
+                        <p>가능한 것</p>
+                        <ul>
+                          <li>Repository 생성 및 관리</li>
+                          <li> Commit / Push / Pull</li>
+                          <li> Branch 기본 활용</li>
+                          <li> 프로젝트 소스 코드 관리</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div><!--html-->
+                  <div class="skills01_detail">
+                    <div class="inskill_title">
+                      <p>Vs code</p>
+                    </div>
+                    <div class="inskill_detail">
+                      <p>웹 프로젝트의 HTML, CSS, JavaScript, React 등을 작성하고 개발 및 디버깅에 활용할 수 있습니다..</p>
+                      <div class="inskill_txt">
+                        <p>가능한 것</p>
+                        <ul>
+                          <li>HTML / CSS / JS 작성</li>
+                          <li> React 프로젝트 구성</li>
+                          <li> Extension 활용</li>
+                          <li> 개발자 도구를 활용한 오류 확인</li>
+                          <li> Live Server를 활용한 웹페이지 확인</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div><!--css_box-->
+                  <div class="skills01_detail">
+                    <div class="inskill_title">
+                      <p>Visual Studio</p>
+                    </div>
+                    <div class="inskill_detail">
+                      <p>C/C++ 등의 프로그래밍 실습과 프로젝트에서 코드 작성 및 실행 환경으로 활용할 수 있습니다.</p>
+                      <div class="inskill_txt">
+                        <p>가능한 것</p>
+                        <ul>
+                          <li>프로젝트 생성 및 관리</li>
+                          <li> C/C++ 코드 작성</li>
+                          <li> 디버깅 및 오류 확인</li>
+                          <li> 프로그램 빌드 및 실행</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div><!--js_box-->
+                  <div class="skills01_detail">
+                    <div class="inskill_title">
+                      <p>Photoshop</p>
+                    </div>
+                    <div class="inskill_detail">
+                      <p>웹 디자인에 필요한 이미지와 그래픽 요소를 편집하고 활용할 수 있습니다.</p>
+                      <div class="inskill_txt">
+                        <p>가능한 것</p>
+                        <ul>
+                          <li>이미지 크기 및 해상도 조정</li>
+                          <li> 이미지 보정</li>
+                          <li> 배경 제거</li>
+                          <li>웹용 이미지 제작 및 편집</li>
+                          <li>디자인 시안에 맞춘 이미지 수정</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div><!--scss_box-->
+                </div><!--programming_sheet-->
+              </div><!--programming-->
+            </div><!--tools-->
+            <div>
+              <div class="skills01_title">
+                <p>Etc</p>
+              </div>
+              <div class="skills01">
+                <ul class="skills01_tab">
+                  <li class="on_tab01"><img src="./img/logo19.png" alt=""></li>
+                  <li><img src="./img/logo20.png" alt=""></li>
+                  <li><img src="./img/logo06.png" alt=""></li>
+                </ul>
+                <div class="skills01_sheet">
+                  <div class="on_sheet01 skills01_detail">
+                    <div class="inskill_title">
+                      <p>Linux</p>
+                    </div>
+                    <div class="inskill_detail">
+                      <p>리눅스 기반 환경에서 기본적인 명령어를 사용하여 서버 시스템 구조를 이해하고 파일 및 디렉터리를 관리할 수 있습니다.</p>
+                      <div class="inskill_txt">
+                        <p>가능한 것</p>
+                        <ul>
+                          <li>파일 및 디렉터리 생성·수정·권한 설정</li>
+                          <li>패키지 매니저를 통한 프로그램 설치 및 관리</li>
+                          <li>Shell 명령어를 활용한 기본적인 시스템 작업</li>
+                          <li>프로세스 상태 확인 및 기본 문제 해결</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div><!--html-->
+                  <div class="skills01_detail">
+                    <div class="inskill_title">
+                      <p>Ubuntu</p>
+                    </div>
+                    <div class="inskill_detail">
+                      <p>Ubuntu OS 환경을 구축하여 서버 및 개발 환경을 안정적으로 운영하고 기본적인 서버 설정을 진행할 수 있습니다.</p>
+                      <div class="inskill_txt">
+                        <p>가능한 것</p>
+                        <ul>
+                          <li>Ubuntu OS 설치 및 초기 개발 환경 세팅</li>
+                          <li>Apt 패키지 관리자를 활용한 소프트웨어 설치</li>
+                          <li>방화벽(UFW) 및 기본 네트워크 포트 설정</li>
+                          <li>개발용 로컬/가상 서버 환경 구축 및 유지</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div><!--css_box-->
+                  <div class="skills01_detail">
+                    <div class="inskill_title">
+                      <p>MySQL</p>
+                    </div>
+                    <div class="inskill_detail">
+                      <p>관계형 데이터베이스(RDBMS)의 기본 개념을 이해하고, SQL 문법을 사용해 데이터를 체계적으로 관리할 수 있습니다.</p>
+                      <div class="inskill_txt">
+                        <p>가능한 것</p>
+                        <ul>
+                          <li>테이블 생성, 수정, 삭제 등 DDL 활용</li>
+                          <li>SELECT, INSERT, UPDATE, DELETE 쿼리 작성</li>
+                          <li>JOIN을 활용한 다중 테이블 데이터 조회</li>
+                          <li>기본적인 데이터 CRUD 기능 구현 및 DB 연동</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div><!--js_box-->
+                </div><!--programming_sheet-->
+              </div><!--programming-->
+            </div><!--etc-->
+          </div>
+        </div>
+      </div>
+    </section><!--third-->
+    <section class="capistone_box" id="capistone_box">
+      <div class="capistone">
+        <div class="capistone_title">
+          <p>Capiston</p>
+        </div>
+        <div class="capistone_cover">
+          <div class="capistone_imgbox">
+            <div class="capistone_img">
+              <img src="./img/capistone_img.png" alt="">
+            </div>
+          </div><!--capistone_imgbox-->
+          <div class="capistone_text">
+            <p class="capistone_txt01">심부름 서비스 어플리케이션</p>
+            <p class="capistone_txt02">1인 가구 및 바쁜 현대인들을 위한 실시간 심부름 매칭 어플리케이션입니다.</p>
+            <ul class="capistone_txt03">
+              <li>주요 기능 : 실시간 위치 기반 심부름 요청 밎 매칭</li>
+              <li>작업 내용 : UI/UX 디자인 및 프로토타입 제작, 기획서 작성</li>
+              <li>제작 기간 : 2026.03.05 ~ 2026.06.18</li>
+            </ul>
+            <div class="capistone_textbtn">
+              <a href="./img/캡스톤 기획서.pdf" target="_blank">기획서</a>
+              <a href="https://github.com/03josuhyun/capistone-report/tree/main" target="_blank">개발 결과물</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="project_box" id="project_box">
+      <div class="project">
+        <div class="project_title">
+          <p>PROJECT</p>
+        </div>
+        <div class="project_cover">
+          <button class="project_left project_btn">
+            <img src="./img/left_angle.png" alt="">
+          </button>
+          <div class="project_contents">
+            <div class="project_inside">
+              <div class="project01">
+                <div class="project01_img">
+                  <img src="./img/project_img01.jpg" alt="">
+                </div>
+                <div class="project01_text">
+                  <div class="project01_txt01">
+                    <p>UI&UX 디자인</p>
+                  </div>
+                  <div class="project01_txt02">
+                    <span>#Figma</span>
+                    <span>#Photo Shop</span>
+                  </div>
+                  <div class="project01_txt03">
+                    <p>제작기간 : </p>
+                    <p>2026.04 ~ 2026.04 (2주)</p>
+                  </div>
+                </div>
+                <div class="project01_btn">
+                  <a href="./img/프로토타이핑 및 사용자 테스트(조수현).pdf" class="pdf_btn" target="_blank">기획서</a>
+                  <a href="https://www.figma.com/proto/yidXDDcKwPAtZ6Wmzv2P3Y/UI-%EB%94%94%EC%9E%90%EC%9D%B8?node-id=181-6896&t=zwqgwZdNNATVRcIt-1&scaling=scale-down&content-scaling=fixed&page-id=146%3A3268&starting-point-node-id=181%3A6896&show-proto-sidebar=1"
+                    target="_blank">프로토타입</a>
+                </div>
+              </div><!--project01-->
+              <div class="project01">
+                <div class="project01_img">
+                  <img src="./img/project_img02.jpg" alt="">
+                </div>
+                <div class="project01_text">
+                  <div class="project01_txt01">
+                    <p>개인 적응형 쇼핑몰</p>
+                  </div>
+                  <div class="project01_txt02">
+                    <span>#HTML</span>
+                    <span>#SCSS</span>
+                    <span>#CSS</span>
+                    <span>#JavaScript</span>
+                  </div>
+                  <div class="project01_txt03">
+                    <p>제작기간 : </p>
+                    <p>2026.05 ~ 2026.06 (2주)</p>
+                  </div>
+                </div>
+                <div class="project01_btn">
+                  <a href="" target="_blank">기획서</a>
+                  <a href="" target="_blank">홈페이지</a>
+                  <a href="" target="_blank">GitHub</a>
+                </div>
+              </div><!--project01-->
+              <div class="project01">
+                <div class="project01_img">
+                  <img src="./img/project_img03.jpg" alt="">
+                </div>
+                <div class="project01_text">
+                  <div class="project01_txt01">
+                    <p class="text01">
+                      <span>반응형 사이트</span>
+                    </p>
+                    <p>팀 프로젝트 사이트 제작</p>
+                  </div>
+                  <div class="project01_txt02">
+                    <span>#HTML</span>
+                    <span>#SCSS</span>
+                    <span>#CSS</span>
+                    <span>#JavaScript</span>
+                  </div>
+                  <div class="project01_txt03">
+                    <p>제작기간 : </p>
+                    <p>2026.05 ~ 2026.06 (2주)</p>
+                  </div>
+                </div>
+                <div class="project01_btn">
+                  <a href="./img/비짓제주 리뉴얼 기획서.pdf" class="pdf_btn" target="_blank">기획서</a>
+                  <a href="https://03josuhyun.github.io/visit-jeju-responsive-/" target="_blank">홈페이지</a>
+                  <a href="https://github.com/03josuhyun/visit-jeju-responsive-" target="_blank">GitHub</a>
+                </div>
+              </div><!--project01-->
+              <div class="project01">
+                <div class="project01_img">
+                  <img src="./img/project_img04.jpg" alt="">
+                </div>
+                <div class="project01_text">
+                  <div class="project01_txt01">
+                    <p>
+                      <span>React 리뉴얼</span>
+                    </p>
+                    <p>React 리뉴얼 사이트</p>
+                  </div>
+                  <div class="project01_txt02">
+                    <span>#React</span>
+                    <span>#Styled-Components</span>
+                    <span>#CSS</span>
+                    <span>#JavaScript</span>
+                  </div>
+                  <div class="project01_txt03">
+                    <p>제작기간 : </p>
+                    <p>2026.05 ~ 2026.06 (2주)</p>
+                  </div>
+                </div>
+                <div class="project01_btn">
+                  <a href="./img/react_기획서.pdf" class="pdf_btn" target="_blank">기획서</a>
+                  <a href="https://03josuhyun.github.io/lingtea/" target="_blank">홈페이지</a>
+                  <a href="https://github.com/03josuhyun/lingtea" target="_blank">GitHub</a>
+                </div>
+              </div><!--project01-->
+            </div><!--project_inside-->
+          </div>
+          <button class="project_right project_btn">
+            <img src="./img/right_angle.png" alt="">
+          </button>
+        </div><!--project_cover-->
+      </div>
+    </section><!--four-->
+    <section class="contact_box" id="contact_box">
+      <div class="contact">
+        <div class="contact_title">
+          <p>CONTACT</p>
+        </div>
+        <div class="contact01">
+
+          <div class="contact_img">
+            <div class="contact_background"></div>
+            <div class="contact_background01"></div>
+            <div class="contact_image">
+              <img src="./img/about_img04.jpg" alt="">
+            </div>
+          </div>
+          <div class="contact_text">
+            <p class="contact_txt">감사합니다!</p>
+            <p>JoSuHyun</p>
+            <p>Email : 112hee22@naver.com</p>
+            <p>Tel : 010-2754-1583</p>
+            <p><a href="https://github.com/03josuhyun">GitHub Address</a></p>
+          </div>
+        </div>
+      </div>
+    </section><!--fiv-->
+  </div>
+</body>
+
+
+</html>
